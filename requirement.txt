@@ -1,0 +1,32 @@
+1 - Install MySQL Driver
+	python -m pip install mysql-connector-python 
+	
+2 - Install scikit-learn ( classification )
+	pip install -U scikit-learn --user
+
+3 - Install matplotlib ( visualization 2d )
+	python -m pip install -U pip --user
+	python -m pip install -U matplotlib --user
+
+
+4- Install urllib3 (get domain name)
+	pip install urllib3
+
+5- Install pandas
+	pip install pandas
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------
+----------------------------------------------
+- Install selenium 
+	pip install selenium
