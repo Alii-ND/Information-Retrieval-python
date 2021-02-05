@@ -4,11 +4,11 @@ import WithoutAPI  as withoutAPI
 import databaseHandler as dbHandler
 import classification as clf
 import prediction as pred
-
+from datetime import datetime
 
 #db = dbHandler.databaseHandler()
 #infoRet= withAPI.WithAPI();
-infoRet= withoutAPI.WithoutAPI();
+#infoRet= withoutAPI.WithoutAPI();
 
 
 #listOfScoreCosine=db.get_all_score_cosine_withoutAPI()
@@ -17,7 +17,7 @@ infoRet= withoutAPI.WithoutAPI();
 #infoRet.ToCSV()
 
 # Decision Tree
-clf.classificationDesionTree()
+#clf.classificationDesionTree()
 
 # SVM
 #clf.classificationSVM()
@@ -43,5 +43,7 @@ clf.classificationDesionTree()
 query='ادوات البيانات الضخمة'
 #what is internet of things
 #ادوات البيانات الضخمة
-
-#pred.getPrediction(query)
+startTime=datetime.now()
+pred.getPrediction(query)
+endTime=datetime.now()
+print("exec time :",(endTime-startTime))

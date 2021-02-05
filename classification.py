@@ -9,6 +9,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.naive_bayes import GaussianNB,MultinomialNB,ComplementNB,BernoulliNB,CategoricalNB
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
+from datetime import datetime
 
 def classificationDesionTree():
     col_names = ['*','web1','web2','cosine', 'len', 'word', 'sameDomain', 'label']
@@ -33,10 +34,12 @@ def classificationDesionTree():
 
     # save the model
     dump(clf, open('model.pkl', 'wb'))
-
+    startTime=datetime.now()
     #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
 
+    print("exec time :",endTime-startTime)
     # Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
 
@@ -64,7 +67,14 @@ def classificationSVM():
     clf=SVC(kernel='poly')
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -94,7 +104,14 @@ def classificationGaussianNaiveBayes():
     clf=GaussianNB()
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -125,7 +142,14 @@ def classificationMultinomialNaiveBayes():
     clf=MultinomialNB()
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -155,7 +179,14 @@ def classificationComplementNaiveBayes():
     clf=ComplementNB()
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -186,7 +217,14 @@ def classificationBernoulliNaiveBayes():
     clf=BernoulliNB()
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -216,7 +254,14 @@ def classificationCategoricalNaiveBayes():
     clf=CategoricalNB()
     clf.fit(X_train,y_train)
 
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
@@ -242,12 +287,18 @@ def classificationRandomForest():
     y = pima.label # Target variable
 
     #Split dataset into training set and test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=4) # 80% training and 20% test
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=5) # 80% training and 20% test
 
     clf=RandomForestClassifier()
     clf.fit(X_train,y_train)
-
+    # save the model
+    dump(clf, open('model.pkl', 'wb'))
+    startTime=datetime.now()
+    #Predict the response for test dataset
     y_pred = clf.predict(X_test)
+    endTime=datetime.now()
+
+    print("exec time :",endTime-startTime)
 
     #Model Accuracy, how often is the classifier correct?
     print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
