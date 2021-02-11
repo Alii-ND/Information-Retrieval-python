@@ -1,73 +1,185 @@
-#Decision Tree
+Decision Tree: 5
+        Accuracy: 0.9354838709677419
+        precision: 0.594758064516129
+        recall: 0.75
 
-Accuracy: 0.9354838709677419
-precision: 0.75
-recall: 0.75
-
-[[26  1]
- [ 1  3]]
- 
-------------------------------
-# SVM
-
-Accuracy: 0.8709677419354839
-precision: 0.12903225806451613
-recall: 0.0
-
-[[27  0]
- [ 4  0]]
- 
-------------------------------
-# Gaussian Naive Bayes
-Accuracy: 0.45161290322580644
-precision: 0.19047619047619047
-recall: 1.0
-
-[[10 17]
- [ 0  4]]
-------------------------------
-# Multinomial Naive Bayes
-Accuracy: 0.8387096774193549
-precision: 0.2645161290322581
-recall: 0.5
-
-[[24  3]
- [ 2  2]]
-------------------------------
-# Complement Naive Bayes
-Accuracy: 0.6451612903225806
-precision: 0.2053349875930521
-recall: 0.75
-
-[[17 10]
- [ 1  3]]
-
-------------------------------
-# Bernoulli Naive Bayes
-Accuracy: 0.8387096774193549
-precision: 0.2645161290322581
-recall: 0.5
-
-[[24  3]
- [ 2  2]]
+        [[26  1]
+        [ 1  3]]
 
 
-------------------------------
-#  Categorical Naive Bayes
-Accuracy: 0.6451612903225806
-precision: 0.2053349875930521
-recall: 0.75
+Decision Tree: 4
+        Accuracy: 0.967741935483871
+        precision: 0.782258064516129
+        recall: 0.75
 
-[[17 10]
- [ 1  3]]
-
+        [[27  0]
+        [ 1  3]]
 
 
-------------------------------
-# Random Forest
-Accuracy: 0.9354838709677419
-precision: 0.564516129032258
-recall: 0.5
+Decision Tree: 3
+        Accuracy: 0.967741935483871
+        precision: 0.532258064516129
+        recall: 0.5
 
-[[27  0]
- [ 2  2]]
+        [[29  0]
+        [ 1  1]]
+
+
+Decision Tree: 2
+        Accuracy: 0.8709677419354839
+        precision: 0.4717741935483871
+        recall: 0.5
+
+        [[24  1]
+        [ 3  3]]
+
+
+Decision Tree: 1
+        Accuracy: 0.967741935483871
+        precision: 0.782258064516129
+        recall: 0.75
+
+        [[27  0]
+        [ 1  3]]
+
+
+####################################################################
+
+SVM: 5
+        Accuracy: 0.8709677419354839
+        precision: 0.12903225806451613
+        recall: 0.0
+
+        [[27  0]
+        [ 4  0]]
+
+
+SVM: 4
+        Accuracy: 0.8709677419354839
+        precision: 0.12903225806451613
+        recall: 0.0
+
+        [[27  0]
+        [ 4  0]]
+
+
+
+SVM: 3
+        Accuracy: 0.8709677419354839
+        precision: 0.12903225806451613
+        recall: 0.0
+
+        [[27  0]
+        [ 4  0]]
+
+
+SVM: 2
+        Accuracy: 0.8064516129032258
+        precision: 0.1935483870967742
+        recall: 0.0
+
+        [[25  0]
+        [ 6  0]]
+
+
+SVM: 1
+        Accuracy: 0.8709677419354839
+        precision: 0.12903225806451613
+        recall: 0.0
+
+        [[27  0]
+        [ 4  0]]
+
+
+####################################################################
+
+Gaussian Naive Bayes: 5
+        Accuracy: 0.5806451612903226
+        precision: 0.23529411764705882
+        recall: 1.0
+
+        [[14 13]
+        [ 0  4]]
+
+
+Gaussian Naive Bayes: 4
+        Accuracy: 0.45161290322580644
+        precision: 0.19047619047619047
+        recall: 1.0
+
+        [[10 17]
+        [ 0  4]]
+
+
+Gaussian Naive Bayes: 3
+        Accuracy: 0.7741935483870968
+        precision: 0.10368663594470046
+        recall: 0.5
+
+        [[23  6]
+        [ 1  1]]
+
+
+Gaussian Naive Bayes: 2
+        Accuracy: 0.5483870967741935
+        precision: 0.3
+        recall: 1.0
+
+        [[11 14]
+        [ 0  6]]
+
+
+Gaussian Naive Bayes: 1
+        Accuracy: 0.3870967741935484
+        precision: 0.17391304347826086
+        recall: 1.0
+
+        [[ 8 19]
+        [ 0  4]]
+
+
+####################################################################
+
+Random Forest: 5
+        Accuracy: 0.9354838709677419
+        precision: 0.594758064516129
+        recall: 0.75
+
+        [[26  1]
+        [ 1  3]]
+
+
+Random Forest: 4
+        Accuracy: 0.9354838709677419
+        precision: 0.564516129032258
+        recall: 0.5
+
+        [[27  0]
+        [ 2  2]]
+
+
+Random Forest: 3
+        Accuracy: 0.967741935483871
+        precision: 0.532258064516129
+        recall: 0.5
+
+        [[29  0]
+        [ 1  1]]
+
+
+Random Forest: 2
+        Accuracy: 0.9032258064516129
+        precision: 0.5967741935483871
+        recall: 0.5
+
+        [[25  0]
+        [ 3  3]]
+
+
+Random Forest: 1
+        Accuracy: 0.967741935483871
+        precision: 0.782258064516129
+        recall: 0.75
+
+        [[27  0]
+        [ 1  3]]
